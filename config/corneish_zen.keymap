@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <19 20>;
             bindings = <&kp ESC>;
         };
     };
@@ -28,14 +28,14 @@
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | ALT  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ENT  |
-//                    | GUI | LWR | CTRL|   | SPC | RSE  | ALT |
+//                    | CTRL | GUI | SPC LWR|   | SPC RSE | DEL  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp ALT   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-                  &kp LGUI &mo 1 &kp LCTRL   &kp SPACE &mo 2 &kp RALT
+                  &kp LCTRL &kp GUI  &lt 1 SPACE   &lt 2 SPACE &lt 2 DEL &kp RALT
                         >;
                 };
                 lower_layer {
