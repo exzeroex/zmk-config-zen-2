@@ -28,14 +28,14 @@
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | ALT  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | GUI  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ENT  |
-//                    | CTRL | GUI | SPC LWR|   | SPC RSE | DEL  | ALT |
+//                    | CTRL | ALT | SPC LWR|   | SPC RSE | DEL  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LALT  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LGUI  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-                  &mt LCTRL ESC &kp LGUI  &lt 1 SPACE   &lt 2 SPACE &lt 2 DEL &kp RALT
+                  &mt LCTRL ESC &kp LALT  &lt 1 SPACE   &lt 2 SPACE &lt 2 DEL &kp RALT
                         >;
                 };
                 lower_layer {
@@ -64,7 +64,7 @@
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp LEFT  &kp DOWN        &kp UP   &kp RIGHT &kp DEL
    &trans    &trans   &trans &trans   &trans   &trans      &trans    &kp MINUS &kp EQUAL       &kp LBKT &kp RBKT &kp BSLH
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &trans    &kp NON_US_HASH &kp NON_US_BSLH &kp PGUP &kp PGDN &kp TILDE
-                    	     &kp LCTRL &mo 3   &lt 3 SPACE      &kp SPACE   &trans    &kp RALT
+                    	     &trans &mo 3   &lt 3 SPACE      &trans   &trans    &kp RALT
                         >;
                 };
 
